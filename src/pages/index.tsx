@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Inter } from '@next/font/google';
 import styles from '@/styles/Home.module.css';
+import Header from '../components/Header';
 
 // Note: The subsets need to use single quotes because the font loader values must be explicitly written literal.
 // eslint-disable-next-line @typescript-eslint/quotes
@@ -19,10 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          <p> header </p>
-        </div>
-
+        <Header />
         <div className={styles.center}>
           <p>input area</p>
         </div>
